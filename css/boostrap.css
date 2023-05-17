@@ -1,0 +1,429 @@
+
+
+/* Navbar */
+.text_nav{
+    font-family: 'Dancing Script', cursive;
+    font-size: 21px;
+    color: white !important;
+     }
+
+
+/* .text_nav:hover{
+    /* color: rgb(255, 0, 149) !important; */
+    /* color: rgb(240, 238, 229) !important;
+} */ 
+
+div > a{
+    text-decoration: none;
+    
+}
+
+
+header > nav{
+    height: 100px;
+}
+
+.indexZ{
+    z-index: 1;
+}
+
+
+/* * --------------------------------MAX WIDTH : 390--------------------------*/ 
+/* Presentacion */
+@media screen and (max-width: 390px){
+.text_nav{
+    font-size: 14px;
+    /* background-color: #b1abb1; */
+}
+}
+
+
+
+/* Body */
+
+body{
+    /* background-color: rgb(73, 51, 67); */
+    background-color: #423545;
+    background-color: #0C080B;;
+}
+
+.effect{
+    transition: border 0.3s;
+}
+.effect:hover{
+    border: 2px solid red;
+    
+    /* box-shadow: 50 50 50 white; */
+    
+}
+
+.container_search{
+    width: 700vw;
+    margin-left: 635px;
+   
+}
+
+
+
+/* FOOTER */
+
+
+/* --------------------FOOTER---------------*/
+
+
+footer {
+    background-color:#be060600;
+    height: auto;
+    width: 100% !important;
+    height: auto;
+    /* padding: 7px 7px;
+    */
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer li {
+    list-style-type: none;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+/* ----Tarjeta */
+
+
+.cardEfect{
+    box-shadow: 0px 10px 10px -6px red;
+    background-color: #0C080B;
+    /* background-color: #1b1717; */
+    color:#D1B3C4 ;
+
+}
+.card-img-top{
+    width: 15rem;
+    height: 9rem;
+    margin-left: 30px;
+    padding-top: 25px;
+   
+    
+}
+.card-body{
+    width: 17rem;
+    margin-left: 17px;
+    text-align: justify;
+    
+}
+.card-text{
+    padding: 2px;
+}
+
+.card-precio{
+    margin-left: 16px;
+    color: #D1B3C4;
+    font-size: 17px;
+
+}
+.card-detalle{
+    margin-left: 150px;
+    margin-bottom: 15px;
+}
+.card-title{
+     text-align: center;
+    
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    padding-top: 8px;
+    
+    font-size: 80px;
+    
+}
+.tamaño{
+    height: 200px;
+}
+
+.conntainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn{
+    margin-top: 1px !important;
+}
+.color-Precio{
+    color: #8a0a0a !important;
+}
+
+
+/* ---Contacto-*/
+
+/*  formulario */
+
+
+
+
+ 
+
+
+/* busqueda  */
+.ceroResult{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+
+.size{
+    max-width: 450px;
+    display: flex;
+    justify-content: center !important; 
+    align-items: center !important;
+}
+
+/* --------------------------------MAX WIDTH : 390--------------------------*/
+
+/* Presentacion */
+@media screen and (max-width: 390px){
+.size{
+    max-width: 270px;
+}
+
+}
+
+
+/* CHECKBOX */
+
+.containerCheck{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.checkbox-cajas{
+
+color: #F3BFB9;
+    font-size: 18px;
+    font-family: 'Gochi Hand', cursive;
+    max-width: 270px;
+}
+
+/* --------------------------------MAX WIDTH : 390--------------------------*/
+
+/* Home */
+@media screen and (max-width: 390px){
+
+.containerCheck{
+    max-width: 270px;
+    gap: 5px;
+    padding-left: 30px;
+}
+}
+
+
+
+
+
+/* CARRUSEL ENDARLY */
+
+
+.containerCarrousel {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background-color:#111010;
+    margin-bottom: 5px;
+    /* z-index: -1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+
+.containerCarrousel a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.arrow-next {
+    left: 90%;
+}
+
+.arrow-after {
+    left: 10%;
+}
+
+.containerCarrousel a:hover {
+    color:rgb(255, 0, 149);
+}
+
+.current-slider {
+    visibility: visible;
+    opacity: 1;
+    /* transition: visibility 1s, opacity 1s; */
+}
+
+.carousel {
+    padding-top: 5px;
+}
+
+.title {
+    font-family: 'Poltawski Nowy', serif;
+    padding-top: 20px;
+    font-size: 80px;
+    color:rgba(255, 0, 0, 0.692);
+    /* text-align: center; */
+
+    /* animation-name: colorCambio;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes colorCambio {
+        0% {
+            color: #f0efe6;
+            transform: translateX(2);
+        }
+    
+        100% {
+            color: rgb(216, 19, 19);
+            transform: translateX(5%);
+        } */
+    }
+    
+
+/* --------------------------------MAX WIDTH : 390--------------------------*/
+
+/* Presentacion */
+@media screen and (max-width: 390px){
+
+.title{
+    font-size: 30px;
+    /* padding-top: 45px; */
+    
+}
+
+
+
+}
+
+/* --------------------------------MIN WIDTH -MAX WIDTH --------------------------*/
+
+/* Presentacion */
+@media screen and (min-width : 768px) and (max-width: 1024px){
+.title {
+        font-size: 45px;
+        /* padding-top: 40px; */
+
+    }
+
+
+}
+
+
+
+
+
+
+    /* Estadistica */
+
+        #estadisticas {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        table {
+            width: 80%;
+            height: auto;
+            background-color: rgba(247, 15, 15, 0.192);
+            border-radius: 10px;
+            margin-bottom: 35px;
+    
+        }
+    
+        .color-tabla {
+            color: black;
+            text-align: center;
+            background: linear-gradient(to right bottom, #009dff8f, #ec2f4b94);
+            border-radius: 10px;
+        }
+    
+        .color-tabla th {
+            font-size: 25px;
+            font-weight: bolder;
+            background: #8a0a0a;
+            box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
+            border-radius: 10px;
+    
+        }
+    
+        td {
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+            border: 3px solid transparent;
+            border-radius: 10px;
+            color: white;
+        }
+    
+        th {
+            font-size: 18px;
+            text-align: center;
+            padding: 0px 10px;
+            border: 3px solid transparent;
+            color: white;
+        }
+    
+        .titulo-tabla {
+            text-align: center;
+            border-radius: 10px;
+            background-color: rgba(155, 152, 152, 0.037);
+        }
+    
+        .titulo-tabla th {
+            font-weight: bolder;
+            color: black;
+            background-color: rgb(155, 152, 152);
+            border-radius: 10px;
+        }
+
+
+                /* --------------------------------MAX WIDTH : 390--------------------------*/
+        
+                /* Presentacion */
+                @media screen and (max-width: 390px){
+
+.color-tabla th{
+    font-size: 15px;
+}
+
+ td{
+    font-size: 13px;
+    
+ }
+
+ th{
+    font-size: 15px;
+    
+ }
+                }
+
