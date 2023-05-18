@@ -157,7 +157,7 @@ function display(array) {
           <div class="col-md-6 col-lg-4 col-xl-4 mx-auto ">
               <div class="cardEfect effect card style " style="width: 19rem; height: 25rem; ">
                   <div >
-                    <img src="../Recursos Amazing Events/${array[i].image}" class="card-img-top" alt=${array[i].name}>
+                    <img src="../recursos/${array[i].image}" class="card-img-top" alt=${array[i].name}>
                   </div>
                   <div class="card-body">
                     <h6 class="card-title">${array[i].name}</h6>

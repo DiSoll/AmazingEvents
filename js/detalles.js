@@ -22,7 +22,7 @@ function detalleCard(){
         if (evento[i].id == selectId) {
             detalle += `
              <div class="card-image">
-                 <img src="../Recursos Amazing Events/${evento[i].image}" class="card-img-top image_detalle tamaño-image" alt="...">
+                 <img src="../recursos/${evento[i].image}" class="card-img-top image_detalle tamaño-image" alt="...">
              </div>
              <div class="card-body">
                  <h1 class="color-title">  ${evento[i].name} </h1>
