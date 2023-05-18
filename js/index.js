@@ -16,6 +16,7 @@ var inputSearch = document.getElementById("inputSearch")
 var checkboxCategory = document.getElementById("checkCategories")
 var estadisticas = document.getElementById("estadisticas")
 var buttonNavegacion = []
+var nameCarrusel = document.getElementById("name-carrusel")
 
 async function getData() {
 
@@ -47,7 +48,6 @@ async function getData() {
             break;
 
         case "contact": imprimir("contact")
-            imprimirFormulario()
             break;
 
         case "stats": imprimir("stats")
@@ -55,7 +55,8 @@ async function getData() {
 
         default:
             imprimir("home")
-            arrayFiltrar = eventos
+            break;
+            
     }
 }
 getData()
@@ -66,15 +67,17 @@ for (var i = 0; i < buttonNav.length; i++) {
     const element = buttonNav[i];
     buttonNavegacion.push(buttonNav[i].innerText)
     element.addEventListener("click", function (e) {
-        document.getElementById("name-carrusel").innerHTML = e.target.innerText
+        
         imprimir(e.target.id);
     })
 }
 
 function imprimir(id) {
+    
     switch (id) {
 
         case "upcomingEvents":
+            nameCarrusel.innerHTML = "UPCOMING EVENTS"
             inputSearch.value = ""
             checkedCheckboxes = []
             display(eventosFuturos)
@@ -85,9 +88,11 @@ function imprimir(id) {
             checkboxCategory.style.display = "flex"
             estadisticas.style.display = "none"
             eventsCategories(eventosFuturos)
+            window.history.replaceState(null, null, window.location.origin+"/index.html?time=upcomingEvents");
             break;
 
         case "pastEvents":
+            nameCarrusel.innerHTML = "PAST EVENTS"
             inputSearch.value = ""
             checkedCheckboxes = []
             display(eventosPasados)
@@ -98,18 +103,22 @@ function imprimir(id) {
             checkboxCategory.style.display = "flex"
             estadisticas.style.display = "none"
             eventsCategories(eventosPasados)
+            window.history.replaceState(null, null, window.location.origin+"/index.html?time=pastEvents");
             break;
 
         case "contact":
+            nameCarrusel.innerHTML = "CONTACT"
             imprimirFormulario()
             searchContainer.style.display = "none"
             ulNombreEventos.style.display = "none"
             formulario.style.display = "flex"
             checkboxCategory.style.display = "none"
             estadisticas.style.display = "none"
+            window.history.replaceState(null, null, window.location.origin+"/index.html?time=contact");
             break;
 
         case "stats":
+            nameCarrusel.innerHTML = "STATS"
             imprimirStats()
             texto = ""
             searchContainer.style.display = "none"
@@ -117,9 +126,11 @@ function imprimir(id) {
             formulario.style.display = "none"
             checkboxCategory.style.display = "none"
             estadisticas.style.display = "flex"
+            window.history.replaceState(null, null, window.location.origin+"/index.html?time=stats");
             break;
 
         default:
+            nameCarrusel.innerHTML = "HOME"
             inputSearch.value = ""
             checkedCheckboxes = []
             arrayFiltrar = eventos
@@ -130,6 +141,7 @@ function imprimir(id) {
             estadisticas.style.display = "none"
             display(eventos)
             eventsCategories(eventos)
+            window.history.replaceState(null, null, window.location.origin+"/index.html?time=home");
             break;
     }
 }
@@ -202,6 +214,8 @@ function changePage(i) {
             estadisticas.style.display = "none"
             display(eventos)
             eventsCategories(eventos)
+            window.history.replaceState(null, null, window.location.origin + "/index.html?time=home");
+
             break;
 
         case 1: display(eventosFuturos)
@@ -216,6 +230,7 @@ function changePage(i) {
             checkboxCategory.style.display = "flex"
             estadisticas.style.display = "none"
             eventsCategories(eventosFuturos)
+            window.history.replaceState(null, null, window.location.origin + "/index.html?time=upcomingEvents");
             break;
 
         case 2: display(eventosPasados)
@@ -230,6 +245,7 @@ function changePage(i) {
             checkboxCategory.style.display = "flex"
             estadisticas.style.display = "none"
             eventsCategories(eventosPasados)
+            window.history.replaceState(null, null, window.location.origin + "/index.html?time=pastEvents");
             break;
 
         case 3: imprimirFormulario()
@@ -239,6 +255,7 @@ function changePage(i) {
             formulario.style.display = "flex"
             checkboxCategory.style.display = "none"
             estadisticas.style.display = "none"
+            window.history.replaceState(null, null, window.location.origin + "/index.html?time=contact");
             break;
 
         case 4: imprimirStats()
@@ -250,6 +267,8 @@ function changePage(i) {
             formulario.style.display = "none"
             checkboxCategory.style.display = "none"
             estadisticas.style.display = "flex"
+            window.history.replaceState(null, null, window.location.origin + "/index.html?time=stats");
+            break;
     }
 }
 
@@ -312,13 +331,6 @@ function imprimirFormulario() {
 
 
 // PAGINA STATS
-
-function imprimirStats() {
-    estadisticas.innerHTML =
-        `
-        <h1>Estas en pagina de estadisticas</h1>
-        `
-}
 
 
 //CREACION DINAICA DE CHECKBOX POR CATEGORIA:
