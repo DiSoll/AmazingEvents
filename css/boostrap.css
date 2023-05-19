@@ -1,4 +1,5 @@
-/* Navbar */
+/*------ NAVBAR ------ */
+
 .text_nav {
     font-family: 'Dancing Script', cursive;
     font-size: 21px;
@@ -17,25 +18,18 @@ header>nav {
     z-index: 1;
 }
 
-
-/*--------------------------------MAX WIDTH : 390--------------------------*/
-/* Presentacion */
 @media screen and (max-width: 390px) {
     .text_nav {
         font-size: 14px;
-        /* background-color: #b1abb1; */
     }
 }
 
 
-
-/* Body */
+/*------ BODY ------*/
 
 body {
-    /* background-color: rgb(73, 51, 67); */
     background-color: #423545;
     background-color: #0C080B;
-    ;
 }
 
 .effect {
@@ -44,32 +38,22 @@ body {
 
 .effect:hover {
     border: 2px solid red;
-
-    /* box-shadow: 50 50 50 white; */
-
 }
 
 .container_search {
     width: 700vw;
     margin-left: 635px;
-
 }
 
 
 
-/* FOOTER */
-
-
-/* --------------------FOOTER---------------*/
-
+/* ------FOOTER------*/
 
 footer {
     background-color: #be060600;
     height: auto;
     width: 100% !important;
     height: auto;
-    /* padding: 7px 7px;
-    */
 }
 
 footer ul {
@@ -85,15 +69,13 @@ footer li {
     margin-left: 20px;
 }
 
-/* ----Tarjeta */
 
+/* ------TARJETA ------ */
 
 .cardEfect {
     box-shadow: 0px 10px 10px -6px red;
     background-color: #0C080B;
-    /* background-color: #1b1717; */
     color: #D1B3C4;
-
 }
 
 .card-img-top {
@@ -101,15 +83,12 @@ footer li {
     height: 9rem;
     margin-left: 30px;
     padding-top: 25px;
-
-
 }
 
 .card-body {
     width: 17rem;
     margin-left: 17px;
     text-align: justify;
-
 }
 
 .card-text {
@@ -120,7 +99,6 @@ footer li {
     margin-left: 16px;
     color: #D1B3C4;
     font-size: 17px;
-
 }
 
 .card-detalle {
@@ -139,9 +117,7 @@ footer li {
     align-items: center;
     color: wheat;
     padding-top: 8px;
-
     font-size: 80px;
-
 }
 
 .tamaño {
@@ -152,7 +128,6 @@ footer li {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .btn {
@@ -164,17 +139,7 @@ footer li {
 }
 
 
-/* ---Contacto-*/
-
-/*  formulario */
-
-
-
-
-
-
-
-/* busqueda  */
+/* SEARCH  */
 
 #containerSearch{
     display: none;
@@ -193,18 +158,14 @@ footer li {
     align-items: center !important;
 }
 
-/* --------------------------------MAX WIDTH : 390--------------------------*/
-
-/* Presentacion */
 @media screen and (max-width: 390px) {
     .size {
         max-width: 270px;
     }
-
 }
 
 
-/* CHECKBOX */
+/*------ CHECKBOX ------*/
 
 .containerCheck {
     gap: 20px;
@@ -212,20 +173,15 @@ footer li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .checkbox-cajas {
-
     color: #F3BFB9;
     font-size: 18px;
     font-family: 'Gochi Hand', cursive;
     max-width: 270px;
 }
 
-/* --------------------------------MAX WIDTH : 390--------------------------*/
-
-/* Home */
 @media screen and (max-width: 390px) {
 
     .containerCheck {
@@ -236,11 +192,7 @@ footer li {
 }
 
 
-
-
-
-/* CARRUSEL ENDARLY */
-
+/*------ CARRUSEL ------*/
 
 .containerCarrousel {
     position: relative;
@@ -248,14 +200,10 @@ footer li {
     height: 130px;
     background-color: #111010;
     margin-bottom: 5px;
-    /* z-index: -1; */
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
-
 
 .containerCarrousel a {
     position: absolute;
@@ -312,41 +260,21 @@ footer li {
         } */
 }
 
-
-/* --------------------------------MAX WIDTH : 390--------------------------*/
-
-/* Presentacion */
 @media screen and (max-width: 390px) {
 
     .title {
         font-size: 30px;
-        /* padding-top: 45px; */
-
     }
-
-
-
 }
 
-/* --------------------------------MIN WIDTH -MAX WIDTH --------------------------*/
-
-/* Presentacion */
 @media screen and (min-width : 768px) and (max-width: 1024px) {
     .title {
         font-size: 45px;
-        /* padding-top: 40px; */
-
     }
-
-
 }
 
 
-
-
-
-
-/* Estadistica */
+/*------ ESTADISTICA ------*/
 
 #estadisticas {
     width: 100%;
@@ -362,7 +290,6 @@ table {
     background-color: rgba(247, 15, 15, 0.192);
     border-radius: 10px;
     margin-bottom: 35px;
-
 }
 
 .color-tabla {
@@ -378,7 +305,6 @@ table {
     background: #8a0a0a;
     box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
     border-radius: 10px;
-
 }
 
 td {
@@ -412,9 +338,6 @@ th {
 }
 
 
-/* --------------------------------MAX WIDTH : 390--------------------------*/
-
-/* Presentacion */
 @media screen and (max-width: 390px) {
 
     .color-tabla th {
@@ -423,11 +346,9 @@ th {
 
     td {
         font-size: 13px;
-
     }
 
     th {
         font-size: 15px;
-
     }
 }
